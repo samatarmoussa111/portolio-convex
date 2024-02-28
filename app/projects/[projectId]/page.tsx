@@ -31,17 +31,19 @@ const ProjectIdPage = ({ params }: Props) => {
   }
   return (
     <Container>
-      <div className="h-full w-full space-y-10">
+      <div className="h-full w-full sm:space-y-10 space-y-5">
         <Image
           src={`${process.env.NEXT_PUBLIC_CONVEX_URL}/api/storage/${project.imgSrc}`}
           alt={project.title}
           width={1920}
           height={1200}
-          className="h-[450px] w-full object-contain rounded-md"
+          className="sm:h-[450px]  w-full object-contain  h-[225px]  rounded-md"
         />
-        <div className="flex items-center justify-center gap-x-2">
+        <div className="grid grid-cols-1 gap-y-4 sm:flex justify-center items-center sm:gap-x-4">
           {project.techIcons.map((item) => (
-            <MyBadge key={item} title={item} />
+            <div key={item} className="flex items-center justify-center">
+              <MyBadge title={item} />
+            </div>
           ))}
         </div>
         <div className="flex items-center justify-center gap-x-4">

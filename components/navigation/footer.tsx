@@ -5,7 +5,7 @@ import { GithubIcon, Linkedin, Youtube } from "lucide-react";
 
 const Footer = () => {
   return (
-    <div className="pb-5 pt-40 flex justify-between items-center">
+    <div className="pb-5 sm:pt-40 pt-20 flex flex-col-reverse sm:flex-row gap-y-2 justify-between items-center">
       <div>
         <Typography
           variant="p"
