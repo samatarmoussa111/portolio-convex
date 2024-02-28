@@ -22,10 +22,11 @@ const Hero = () => {
         </Typography>
         <Typography variant="p" component="p">
           Software Engineer. I create complex and modern web applications with
-          <span className="font-semibold"> Next.js</span>,{" "}
-          <span className="font-semibold"> Prisma</span> and{" "}
-          <span className="font-semibold"> Tailwind CSS</span>. Hire me to bring
-          your future <span className="font-semibold">SaaS</span> idea to life.
+          <span className="font-semibold text-primary"> Next.js</span>,{" "}
+          <span className="font-semibold text-primary"> Prisma</span> and{" "}
+          <span className="font-semibold text-primary"> Tailwind CSS</span>.
+          Hire me to bring your future{" "}
+          <span className="font-semibold text-primary">SaaS</span> idea to life.
         </Typography>
       </div>
       <div className="flex items-center justify-center gap-5">

@@ -10,9 +10,6 @@ const Header = () => {
         <Typography variant="h4"> {"< Component />"} </Typography>
       </Link>
       <ul className="flex items-center ">
-        <li>
-          <ModeToggle />
-        </li>
         <li className="ml-5">
           <Button asChild>
             <Link

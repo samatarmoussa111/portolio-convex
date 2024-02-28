@@ -15,11 +15,11 @@ export default function ProjectCard({ project, href }: Props) {
     <div className="relative flex max-w-xs flex-col  rounded-lg border border-border shadow-md">
       <Link href={href} className="mb-10">
         <Image
-          className="h-[150px] w-full rounded-t-lg object-cover"
+          className="h-[146px] w-full rounded-t-lg object-contain"
           src={`${process.env.NEXT_PUBLIC_CONVEX_URL}/api/storage/${project.imgSrc}`}
           alt={project.title}
-          width={1800}
-          height={150}
+          width={1920}
+          height={871}
         />
 
         <div className="p-5">
