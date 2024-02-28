@@ -2,12 +2,18 @@ import Link from "next/link";
 import { ModeToggle } from "../theme/mode-toggle";
 import { Button } from "../ui/button";
 import Typography from "../ui/typography";
+import Image from "next/image";
 
 const Header = () => {
   return (
     <nav className="py-10 mb-5 flex justify-between items-center">
       <Link href="/">
-        <Typography variant="h4"> {"< Component />"} </Typography>
+        <Image
+          src="/images/portfolio_logo.svg"
+          height={130}
+          width={130}
+          alt="logo"
+        />
       </Link>
       <ul className="flex items-center ">
         <li className="ml-5">

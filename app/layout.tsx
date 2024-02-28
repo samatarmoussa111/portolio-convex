@@ -6,6 +6,7 @@ import { ThemeProvider } from "@/components/theme/theme-provider";
 import Header from "@/components/navigation/header";
 import Container from "@/components/container/container";
 import ConvexClientProvider from "@/components/providers/convex-client-provider";
+import Footer from "@/components/navigation/footer";
 
 const poppins = Poppins({ weight: "500", subsets: ["latin"] });
 
@@ -37,6 +38,9 @@ export default function RootLayout({
           </Container>
 
           <ConvexClientProvider>{children}</ConvexClientProvider>
+          <Container>
+            <Footer />
+          </Container>
         </ThemeProvider>
       </body>
     </html>

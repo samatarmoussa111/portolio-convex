@@ -18,7 +18,7 @@ const Projects = () => {
     );
   }
   return (
-    <Container className=" mt-10 sm:mt-36">
+    <Container className=" flex flex-col items-center justify-center mt-10 sm:mt-36">
       <Typography variant="h1" className="text-center">
         Projects
       </Typography>{" "}
