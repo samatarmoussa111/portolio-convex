@@ -1,11 +1,8 @@
 "use client";
 
-import SyntaxHighlighter from "react-syntax-highlighter";
-import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import Markdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import Typography from "../ui/typography";
-import { ArrowBigRight, ArrowRight, HandHeart, Sparkles } from "lucide-react";
 
 interface Props {
   input: string;
@@ -18,24 +15,6 @@ const Maths = ({ input, className }: Props) => {
       remarkPlugins={[remarkGfm]}
       className={className}
       components={{
-        code(props) {
-          const { children, className, node, ...rest } = props;
-          const match = /language-(\w+)/.exec(className || "");
-          return match ? (
-            <SyntaxHighlighter
-              {...rest}
-              PreTag="div"
-              language={match[1]}
-              style={docco}
-            >
-              {children}
-            </SyntaxHighlighter>
-          ) : (
-            <code {...rest} className={className}>
-              {children}
-            </code>
-          );
-        },
         h1(props) {
           return (
             <Typography variant="h1" className="mb-7">
