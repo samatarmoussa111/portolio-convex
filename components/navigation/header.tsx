@@ -1,7 +1,5 @@
 import Link from "next/link";
-import { ModeToggle } from "../theme/mode-toggle";
 import { Button } from "../ui/button";
-import Typography from "../ui/typography";
 import Image from "next/image";
 
 const Header = () => {
