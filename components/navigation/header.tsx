@@ -19,7 +19,7 @@ const Header = () => {
         <li className="ml-5">
           <Button asChild>
             <Link
-              href={`${process.env.NEXT_PUBLIC_CONVEX_URL}/api/storage/kg2fdwf8ddmjj2g2j8a9wavsmx6mb6ay`}
+              href={`${process.env.NEXT_PUBLIC_CONVEX_URL}/api/storage/kg26fzhvwsnmqdd2xb87jvjfd16mc7p7`}
               target="_blank"
             >
               Resume
