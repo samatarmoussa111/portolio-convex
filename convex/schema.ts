@@ -4,7 +4,7 @@ import { v } from "convex/values";
 export default defineSchema({
   projects: defineTable({
     title: v.string(),
-    imgSrc: v.string(),
+    imgSrc: v.id("_storage"),
     description: v.string(),
     repoLink: v.string(),
     sourceLink: v.string(),
